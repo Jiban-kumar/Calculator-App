@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:tabGravity="center">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:icon="@drawable/length"
+                android:text="Distance" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:icon="@drawable/area"
+                android:text="Area" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabvolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:icon="@drawable/volume"
+                android:text="Volume" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabmass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/mass"
+                android:text="Mass" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/speed"
+                android:text="Speed" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabtempreture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/temp2"
+                android:text="Tempreture" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/pressure"
+                android:text="Pressure" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"/>
+
+</LinearLayout>

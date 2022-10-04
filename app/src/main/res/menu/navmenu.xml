@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<group android:checkableBehavior="single">
+    <item android:id="@+id/calculatermenu"
+        android:title="Calculator"
+        android:checkable="true"
+        android:icon="@drawable/ic_calculator"/>
+    <item android:id="@+id/unitmenu"
+        android:title="UnitConverter"
+        android:checkable="true"
+        android:icon="@drawable/unit"/>
+    <item android:id="@+id/currencymenu"
+        android:title="Currency Converter"
+        android:checkable="true"
+        android:icon="@drawable/ic_money"/>
+</group>
+
+</menu>
